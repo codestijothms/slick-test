@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick.css"/>
+    <title>Slick Test</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .page-header{
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .wrapper{
+            margin:0 auto;
+            margin-top: 50px;
+            padding: 30px;
+            width: 480px;
+            min-height: 480px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .my-slider .slick-arrow{
+            position: absolute;
+            z-index: 1;
+            
+        }
+        .my-slider .slick-prev{
+            bottom: 0;
+            left: 0
+        }
+        .my-slider .slick-next{
+            bottom: 0;
+            right: 0
+        }
+        .my-slider .slick-dots{
+            list-style-type: none;
+            text-align: center;
+        }
+        .my-slider .slick-dots li{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header" aria-hidden="false">
+        Slick Test
+    </div>
+    <div class="wrapper">
+        
+        <div class="my-slider">
+            <div class="featured-image">
+                <img src="https://picsum.photos/id/1/512/512" alt="img 1" />
+            </div>
+            <div class="featured-image"> 
+                <img src="https://picsum.photos/id/22/512/512" alt="img 2" />
+            </div>
+            <div class="featured-image"ß> 
+                <img src="https://picsum.photos/id/35/512/512" alt="img 3" />
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.my-slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true
+            });
+        });
+    </script>
+</body>
+</html>
